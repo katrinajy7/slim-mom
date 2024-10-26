@@ -1,4 +1,4 @@
-import { Product } from "../models/productModel.js";
+import { Product } from "../models/diaryModel.js";
 import { HttpError } from "../errors/HttpError.js";
 
 const listProducts = async (req, res) => {
