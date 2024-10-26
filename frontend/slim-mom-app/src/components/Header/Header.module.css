@@ -1,0 +1,84 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #E0E0E0;
+    padding: 20px 20px 10px 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+
+.authHeader {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    /*margin-top: 24px;*/
+    /*width: 1240px;*/
+    max-width: 1240px;
+    width: 100%;
+}
+
+.userBar {
+    display: block;
+}
+
+.burgerMenu {
+    display: none;
+}
+
+.userInfo {
+
+}
+
+.authMenu {
+    /*visibility: hidden;*/
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (min-width: 769px) {
+    .header {
+        justify-content: flex-start;
+        border-bottom: unset;
+        margin-top: 60px;
+    }
+
+    .authMenu {
+        position: absolute;
+        visibility: visible;
+        display: flex;
+
+        gap: 20px;
+        right: 30px;
+        bottom: 5px;
+        z-index: 200;
+    }
+
+    .userInfo {
+
+    }
+
+/*    .authHeader {
+        max-width: 768px;
+    }
+    .burgerMenu {
+        display: block;
+    }
+    .userBar, .navigation {
+        display: none;
+    }*/
+}
+
+/*@media screen and (min-width: 376px) {
+    .authHeader {
+        max-width: 376px;
+    }
+    .burgerMenu {
+        display: block;
+    }
+    .userBar {
+        display: none;
+    }
+}*/
